@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CodeSheep的学习秘诀：如何学好技术以及快速掌握一门新技术</title>
+    <url>/2020/09/07/CodeSheep%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%A7%98%E8%AF%80%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E5%A5%BD%E6%8A%80%E6%9C%AF%E4%BB%A5%E5%8F%8A%E5%BF%AB%E9%80%9F%E6%8E%8C%E6%8F%A1%E4%B8%80%E9%97%A8%E6%96%B0%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<p>通常来说，学习没有捷径！所谓快速学习的窍门，也是基于认真刻苦。<br>这里提供一些作者在学习技术的角度，自己的心得：学习步骤、心态等等。</p>
+<a id="more"></a>
+<p>如何学一门技术？快速掌握一门技术！这种认知性的这种经验，没有办法进行复制，最终的执行力效果还是因人而异的。</p>
+<h3 id="一、认知-了解阶段（第一印象很重要）"><a href="#一、认知-了解阶段（第一印象很重要）" class="headerlink" title="一、认知 了解阶段（第一印象很重要）"></a>一、认知 了解阶段（第一印象很重要）</h3><p>主要是掌握概念和方向(对某个技术点的第一印象非常重要，因为人总有一种先入为主的潜意识)<br>1.了解该技术的百科定义 - 以Spring Boot为例   典型的Web后端框架<br>2.该技术解决了什么问题 - 驱动网站的后端，后端请求发到服务器其的响应<br>3.摸清同类技术有哪些 - Web后端常用同类技术框架：Spring Boot(Java)/beego(Go)/flask、django(Python)/thinkphp(PHP)。开阔眼界，认清这一层级有哪些技术栈<br>4.了解该技术的主要组成部分 - Spring：IOC容器、AOP切面<br>5.思考该技术为什么会出现 - 有了SpringMVC为什么还会出现SpringBoot呢</p>
+<h3 id="二、学语法、学用法"><a href="#二、学语法、学用法" class="headerlink" title="二、学语法、学用法"></a>二、学语法、学用法</h3><p>途径1：视频教程（效率低）（看视频是被动的，学技术阅读文本的能力很重要）<br>途径2：快速上手视频（快速Demo搭建）<br>途径3：看别人写的入门博客<br>途径4（建议）：买书看（优先权威点的书籍）（好书如砖）<br>途径5：看官方文档（学习框架时）（硬着头皮看）（学语言，书籍；框架，官方文档）<br>过程中：多思考、多提炼、多总结、写写博客<br>作者希望通过频道视频来逐渐阐述一种知识体系和学习方法</p>
+<h3 id="三、局部练习、小型实战、环境搭建"><a href="#三、局部练习、小型实战、环境搭建" class="headerlink" title="三、局部练习、小型实战、环境搭建"></a>三、局部练习、小型实战、环境搭建</h3><p>内容如标题，可自行理解<br>小建议：遇到坑及时记录，多思考、多提炼、多总结、写博客、写博客、写博客。</p>
+<h3 id="四、上手实际项目或开源项目"><a href="#四、上手实际项目或开源项目" class="headerlink" title="四、上手实际项目或开源项目"></a>四、上手实际项目或开源项目</h3><p>最高级、最高效、最能学到东西的一种学习方式<br>前提：语言及框架基础要牢固，网络编程知识要牢固，数据结构也要牢固一些。</p>
+<h3 id="五、造轮子、手撸源码"><a href="#五、造轮子、手撸源码" class="headerlink" title="五、造轮子、手撸源码"></a>五、造轮子、手撸源码</h3><p>出一些源码阅读的视频/文章，深度的博客，GitHub开源项目。</p>
+]]></content>
+      <categories>
+        <category>CodeSheep</category>
+      </categories>
+      <tags>
+        <tag>CodeSheep</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建及搭配Next主题简单个单个性化教程</title>
+    <url>/2020/09/16/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>为什么要搭建个人博客，</p>
+<a id="more"></a>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><em>实践是检验真理的唯一标准</em>。感谢你的观看！希望本篇文章对你搭建Hexo博客及搭配Next主题的简单个性化有所帮助。<br>2020年8月底开始学习并搭建个人博客，刚开始主要在B站up主<a href="https://space.bilibili.com/384068749/video" title="CodeSheep">CodeSheep</a>的视频学习（在其早期的视频里），他主要传递的是搭建个人博客以及坚持写博客总结归纳自己的技术面的重要性，我个人也早有打算为自己搭建个人博客。<br>2020年9月6日起正式开始，使用Next主题及简单美化、添加辅助性小插件等，来源于学习其他优质个人博客网站效果及百度搜索个性化教程。<br>大多数教程有一定时间，与当下搭建个人博客版本不符，需要同时自行解读主题配置文件。本片文章内容所囊括的大多数功能是结合Next的主题配置文件完成的，没有那么繁琐。<br>搭建个人博客的其他选择，</p>
+<h1 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h1><p>• Hexo版本：v5.1.1（2020年8月23日发布）（<a href="https://space.bilibili.com/384068749/video" title="官方文档">官方文档</a>）（<a href="https://github.com/hexojs/hexo" title="GitHub仓库">GitHub仓库</a>）<br>• Next版本：v7.8.0（2020年4月1日发布）（<a href="https://github.com/theme-next/hexo-theme-next" title="GitHub仓库">GitHub仓库</a>）<br>• Hexo（2020年9月15日发布5.2.0，差别不大不影响以下配置，详情可看Hexo的<a href="https://github.com/hexojs/hexo/releases" title="GitHub版本说明">GitHub版本说明</a>）<br>• Next主题有一个老版本的官方文档，可能是我没找到新版本的官方文档站，但我个人网站里部分功能也是参照这里的配置来的，对我有一定帮助，所以也贴出来：<a href="http://theme-next.iissnan.com/" title="Next v5.1.4官方文档">Next v5.1.4官方文档</a></p>
+<h1 id="效果展示及GitHub链接"><a href="#效果展示及GitHub链接" class="headerlink" title="效果展示及GitHub链接"></a>效果展示及GitHub链接</h1><p>我的个人博客网站链接：<a href="https://www.qinsouth.cn/">https://www.qinsouth.cn/</a><br>GitHub链接：<a href="https://github.com/qinsouth-575/qinsouth-575.github.io">https://github.com/qinsouth-575/qinsouth-575.github.io</a></p>
+<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="第一步：安装Node-js"><a href="#第一步：安装Node-js" class="headerlink" title="第一步：安装Node.js"></a>第一步：安装Node.js</h3><h3 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h3><h1 id="Next主题简单个性化"><a href="#Next主题简单个性化" class="headerlink" title="Next主题简单个性化"></a>Next主题简单个性化</h1><h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>感谢你的观看，希望对你有所帮助！<br>以下是本文参考文档链接，感谢各位作者！</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node.js的安装及环境配配置</title>
+    <url>/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>简单的说 Node.js 就是运行在服务端的 JavaScript。Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
+<a id="more"></a>
+<h1 id="1-下载Node-js"><a href="#1-下载Node-js" class="headerlink" title="1.下载Node.js"></a>1.下载Node.js</h1><p><a href="https://nodejs.org/en/" title="Node.js官网-下载地址">Node.js官网-下载地址</a><br><img src="http://qinsouth.cn/Node.js/1%E8%BF%9B%E5%85%A5node%E5%AE%98%E7%BD%91.png" alt="进入Node官网" title="进入Node官网"><br>我选的是当前发布版，都可以的；<br>这里会自动匹配你电脑的系统给到推荐下载的版本，点击即开始下载，也可点击下方“其他下载”自行选择。</p>
+<h1 id="2-开始安装"><a href="#2-开始安装" class="headerlink" title="2.开始安装"></a>2.开始安装</h1><p>①下载完成后，双击安装程序，开始安装Node.js<br>②点击勾选，接受，再点击next<br>③安装路径默认在C:\Program Files下面，建议点击【change】修改到D盘或其他盘，然后点击next<br>④基本选择默认，然后next<br><img src="http://qinsouth.cn/Node.js/2%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A21.png" alt="Node安装界面-1" title="Node安装界面-1"><br>⑤如下图框中所示，不选，点击next<br><img src="http://qinsouth.cn/Node.js/3%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A22.png" alt="Node安装界面-2" title="Node安装界面-2"><br>⑥点击Install，进行安装<br>⑦点击finish，完成安装<br>更新新的node版本时只需下载新版本的安装本重走一遍安装程序即可完成。</p>
+<h1 id="3-查看版本号，验证安装成功"><a href="#3-查看版本号，验证安装成功" class="headerlink" title="3.查看版本号，验证安装成功"></a>3.查看版本号，验证安装成功</h1><p>win+R输入cmd（管理员权限键入），如图所示标识安装成功：<br><img src="http://qinsouth.cn/Node.js/4cmd%E6%9F%A5%E7%9C%8Bnode%E7%89%88%E6%9C%AC.png" alt="cmd查看node版本" title="cmd查看node版本"><br>新版的Node.js已自带npm，安装Node.js时会一起安装，npm的作用就是对Node.js依赖的包进行管理，也可以理解为用来安装/卸载Node.js需要装的东西。</p>
+<h1 id="4-环境配置"><a href="#4-环境配置" class="headerlink" title="4.环境配置"></a>4.环境配置</h1><p>这里的环境配置主要配置的是npm安装的全局模块所在的路径以及缓存cache的路径。<br>默认情况下，我们在执行【npm install XXXX -g】安装模块时（可选参数-g，g代表global全局安装的意思），下载的模板，一个全局包，这个包的默认存放路径为【C:\Users\用户名\AppData\Roaming\npm\node_modules】下，这样会占据C盘空间，可以通过CMD指令【npm root -g】查看。<br><img src="http://qinsouth.cn/Node.js/5cmd%E6%9F%A5%E7%9C%8B%E5%8C%85%E9%BB%98%E8%AE%A4%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png" alt="cmd查看包默认存放位置" title="cmd查看包默认存放位置"><br>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【E:\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：<br><img src="http://qinsouth.cn/Node.js/6%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="添加文件夹" title="添加文件夹"><br>创建完两个空文件夹之后，打开cmd命令窗口，输入以下两条指令，注意路径要用你的</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;E:\nodejs\node_global&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;E:\nodejs\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://qinsouth.cn/Node.js/7%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E6%A8%A1%E5%9D%97%E5%8F%8A%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%B7%AF%E5%BE%84.png" alt="配置安装全局模块及缓存文件夹的路径" title="配置安装全局模块及缓存文件夹的路径"><br>npm config list 这条指令可在配置好环境变量后再输入查看 ↓↓↓<br>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”<br><img src="http://qinsouth.cn/Node.js/8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE1.png" alt="配置环境变量1" title="配置环境变量1"><br>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，输入【E:\nodejs\node_global\node_modules】<br><img src="http://qinsouth.cn/Node.js/9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE2.png" alt="配置环境变量2" title="配置环境变量2"><br>将【用户变量】下的【Path】修改为【E:\nodejs\node_global】<br><img src="http://qinsouth.cn/Node.js/10%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE3.png" alt="配置环境变量3" title="配置环境变量3"><br><img src="http://qinsouth.cn/Node.js/11%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE4.png" alt="配置环境变量4" title="配置环境变量4"></p>
+<h1 id="5-npm部分常用命令"><a href="#5-npm部分常用命令" class="headerlink" title="5.npm部分常用命令"></a>5.npm部分常用命令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">• npm -v：查看npm安装的版本。</span><br><span class="line">• npm init：会引导你创建一个package.json文件，包括名称、版本、作者等信息。</span><br><span class="line">• npm list：查看当前目录下已安装的node包。</span><br><span class="line">• npm ls：查看当前目录下已安装的node包。</span><br><span class="line">• npm install moduleNames：安装Node模块到本地目录node_modules下。</span><br><span class="line">• npm install &lt; name &gt; -g：将包安装到全局环境中。</span><br><span class="line">• npm install &lt; name &gt; --save：安装的同时，将信息写入package.json中，项目路径中如果有package.json文件时，直接使用npm install方法就可以根据dependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm install &lt; name&gt; --save-dev：安装的同时，将信息写入package.json中项目路径中如果有package.json文件时，直接使用npm install方法就可以根据devDependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm uninstall moudleName：卸载node模块。</span><br></pre></td></tr></table></figure>
+
+<h1 id="6-配置淘宝镜像"><a href="#6-配置淘宝镜像" class="headerlink" title="6.配置淘宝镜像"></a>6.配置淘宝镜像</h1><p>通过npm安装模块时都是去国外的镜像下载的，但是有的时候由于网络等原因导致安装模块失败，好在阿里有团队维护国内镜像<a href="https://developer.aliyun.com/mirror/NPM?from=tnpm" title="淘宝NPM镜像">淘宝NPM镜像</a>，上面有使用说明，大家可自行查看。<br><img src="http://qinsouth.cn/Node.js/12%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png" alt="淘宝镜像截图1" title="添加淘宝镜像截图1"><br><img src="http://qinsouth.cn/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png" alt="淘宝镜像截图2" title="淘宝镜像截图2"></p>
+<h1 id="7-测试"><a href="#7-测试" class="headerlink" title="7.测试"></a>7.测试</h1><p>配置完成后，安装个module测试下，我们就安装最常用的express模块，打开cmd窗口，输入如下命令进行模块的全局安装：<br><code>npm install express -g   // -g是全局安装的意思</code><br>Node.js安装配置完成！<br>本文讲解流程及内容参照以下两个链接，感谢两位作者，本文图片全部是自行截图配文字上传<br>博客园-刘奇云：<a href="https://www.cnblogs.com/liuqiyun/p/8133904.html" title="Node.js安装及环境配置之Windows篇">Node.js安装及环境配置之Windows篇</a><br>CSDN-huangfuyk：<a href="https://blog.csdn.net/weixin_42881768/article/details/105028164" title="Node.js的安装及环境配置【超详细】">Node.js的安装及环境配置【超详细】</a></p>
+]]></content>
+      <categories>
+        <category>Node.js</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World!</title>
     <url>/2020/09/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,25 +79,6 @@
       </categories>
       <tags>
         <tag>待删除</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CodeSheep的学习秘诀：如何学好技术以及快速掌握一门新技术</title>
-    <url>/2020/09/07/CodeSheep%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%A7%98%E8%AF%80%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E5%A5%BD%E6%8A%80%E6%9C%AF%E4%BB%A5%E5%8F%8A%E5%BF%AB%E9%80%9F%E6%8E%8C%E6%8F%A1%E4%B8%80%E9%97%A8%E6%96%B0%E6%8A%80%E6%9C%AF/</url>
-    <content><![CDATA[<p>通常来说，学习没有捷径！所谓快速学习的窍门，也是基于认真刻苦。<br>这里提供一些作者在学习技术的角度，自己的心得：学习步骤、心态等等。</p>
-<a id="more"></a>
-<p>如何学一门技术？快速掌握一门技术！这种认知性的这种经验，没有办法进行复制，最终的执行力效果还是因人而异的。</p>
-<h3 id="一、认知-了解阶段（第一印象很重要）"><a href="#一、认知-了解阶段（第一印象很重要）" class="headerlink" title="一、认知 了解阶段（第一印象很重要）"></a>一、认知 了解阶段（第一印象很重要）</h3><p>主要是掌握概念和方向(对某个技术点的第一印象非常重要，因为人总有一种先入为主的潜意识)<br>1.了解该技术的百科定义 - 以Spring Boot为例   典型的Web后端框架<br>2.该技术解决了什么问题 - 驱动网站的后端，后端请求发到服务器其的响应<br>3.摸清同类技术有哪些 - Web后端常用同类技术框架：Spring Boot(Java)/beego(Go)/flask、django(Python)/thinkphp(PHP)。开阔眼界，认清这一层级有哪些技术栈<br>4.了解该技术的主要组成部分 - Spring：IOC容器、AOP切面<br>5.思考该技术为什么会出现 - 有了SpringMVC为什么还会出现SpringBoot呢</p>
-<h3 id="二、学语法、学用法"><a href="#二、学语法、学用法" class="headerlink" title="二、学语法、学用法"></a>二、学语法、学用法</h3><p>途径1：视频教程（效率低）（看视频是被动的，学技术阅读文本的能力很重要）<br>途径2：快速上手视频（快速Demo搭建）<br>途径3：看别人写的入门博客<br>途径4（建议）：买书看（优先权威点的书籍）（好书如砖）<br>途径5：看官方文档（学习框架时）（硬着头皮看）（学语言，书籍；框架，官方文档）<br>过程中：多思考、多提炼、多总结、写写博客<br>作者希望通过频道视频来逐渐阐述一种知识体系和学习方法</p>
-<h3 id="三、局部练习、小型实战、环境搭建"><a href="#三、局部练习、小型实战、环境搭建" class="headerlink" title="三、局部练习、小型实战、环境搭建"></a>三、局部练习、小型实战、环境搭建</h3><p>内容如标题，可自行理解<br>小建议：遇到坑及时记录，多思考、多提炼、多总结、写博客、写博客、写博客。</p>
-<h3 id="四、上手实际项目或开源项目"><a href="#四、上手实际项目或开源项目" class="headerlink" title="四、上手实际项目或开源项目"></a>四、上手实际项目或开源项目</h3><p>最高级、最高效、最能学到东西的一种学习方式<br>前提：语言及框架基础要牢固，网络编程知识要牢固，数据结构也要牢固一些。</p>
-<h3 id="五、造轮子、手撸源码"><a href="#五、造轮子、手撸源码" class="headerlink" title="五、造轮子、手撸源码"></a>五、造轮子、手撸源码</h3><p>出一些源码阅读的视频/文章，深度的博客，GitHub开源项目。</p>
-]]></content>
-      <categories>
-        <category>CodeSheep</category>
-      </categories>
-      <tags>
-        <tag>CodeSheep</tag>
       </tags>
   </entry>
 </search>
