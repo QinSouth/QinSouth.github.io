@@ -21,38 +21,21 @@
     var CONFIG = {"hostname":"www.qinsouth.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本文是为准备搭建Hexo博客所单独发布的环境搭建博文，同时也是属于Node系列的文章。正文中有关于Node.js的简单介绍、详细的搭建流程教程以及npm部分常用命令，希望能对你有所帮助！感谢观看。">
+  <meta name="description" content="Hexo是基于JavaScript的静态博客框架，是当下最流行的博客框架之一。Hexo有非常大的用户群体，其本身的插件和主题资源也非常丰富，同时作为静态博客也比较轻量、好上手、功能也简单一些。我个人认为使用Hexo是初试博客搭建的最好选择。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.js的安装及环境配配置">
-<meta property="og:url" content="http://www.qinsouth.cn/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="Hexo博客搭建及搭配Next主题简单个性化教程">
+<meta property="og:url" content="http://www.qinsouth.cn/2020/09/18/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="QinSouth的博客">
-<meta property="og:description" content="本文是为准备搭建Hexo博客所单独发布的环境搭建博文，同时也是属于Node系列的文章。正文中有关于Node.js的简单介绍、详细的搭建流程教程以及npm部分常用命令，希望能对你有所帮助！感谢观看。">
+<meta property="og:description" content="Hexo是基于JavaScript的静态博客框架，是当下最流行的博客框架之一。Hexo有非常大的用户群体，其本身的插件和主题资源也非常丰富，同时作为静态博客也比较轻量、好上手、功能也简单一些。我个人认为使用Hexo是初试博客搭建的最好选择。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/1%E8%BF%9B%E5%85%A5node%E5%AE%98%E7%BD%91.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/2%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A21.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/3%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A22.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/4cmd%E6%9F%A5%E7%9C%8Bnode%E7%89%88%E6%9C%AC.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/5cmd%E6%9F%A5%E7%9C%8B%E5%8C%85%E9%BB%98%E8%AE%A4%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/6%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B9.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/7%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E6%A8%A1%E5%9D%97%E5%8F%8A%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%B7%AF%E5%BE%84.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE1.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE2.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/10%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE3.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/11%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE4.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/12%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png">
-<meta property="og:image" content="http://qinsouth.cn/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png">
-<meta property="article:published_time" content="2020-09-11T14:07:31.000Z">
-<meta property="article:modified_time" content="2020-09-12T17:01:22.000Z">
+<meta property="article:published_time" content="2020-09-18T13:07:31.000Z">
+<meta property="article:modified_time" content="2020-09-26T17:10:22.000Z">
 <meta property="article:author" content="QinSouth·秦南">
-<meta property="article:tag" content="Node.js">
-<meta property="article:tag" content="npm">
-<meta property="article:tag" content="环境搭建">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="个人博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://qinsouth.cn/Node.js/1%E8%BF%9B%E5%85%A5node%E5%AE%98%E7%BD%91.png">
 
-<link rel="canonical" href="http://www.qinsouth.cn/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="http://www.qinsouth.cn/2020/09/18/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/">
 
 
 <script id="page-configurations">
@@ -65,7 +48,7 @@
   };
 </script>
 
-  <title>Node.js的安装及环境配配置 | QinSouth的博客</title>
+  <title>Hexo博客搭建及搭配Next主题简单个性化教程 | QinSouth的博客</title>
   
 
 
@@ -223,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.qinsouth.cn/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://www.qinsouth.cn/2020/09/18/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/HeadPortrait.png">
@@ -236,7 +219,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Node.js的安装及环境配配置
+          Hexo博客搭建及搭配Next主题简单个性化教程
         </h1>
 
         <div class="post-meta">
@@ -246,14 +229,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-09-11 22:07:31" itemprop="dateCreated datePublished" datetime="2020-09-11T22:07:31+08:00">2020-09-11</time>
+              <time title="创建时间：2020-09-18 21:07:31" itemprop="dateCreated datePublished" datetime="2020-09-18T21:07:31+08:00">2020-09-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-13 01:01:22" itemprop="dateModified" datetime="2020-09-13T01:01:22+08:00">2020-09-13</time>
+                <time title="修改时间：2020-09-27 01:10:22" itemprop="dateModified" datetime="2020-09-27T01:10:22+08:00">2020-09-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -261,7 +244,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a>
+                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
                 </span>
             </span>
 
@@ -278,7 +261,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -297,21 +280,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本文是为准备搭建Hexo博客所单独发布的环境搭建博文，同时也是属于Node系列的文章。<br>正文中有关于Node.js的简单介绍、详细的搭建流程教程以及npm部分常用命令，希望能对你有所帮助！感谢观看。</p>
+        <p>Hexo是基于JavaScript的静态博客框架，是当下最流行的博客框架之一。Hexo有非常大的用户群体，其本身的插件和主题资源也非常丰富，同时作为静态博客也比较轻量、好上手、功能也简单一些。<br>我个人认为使用Hexo是初试博客搭建的最好选择。</p>
 <a id="more"></a>
-<p>简单的说 Node.js 就是运行在服务端的 JavaScript。Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。</p>
-<h1 id="1-下载Node-js"><a href="#1-下载Node-js" class="headerlink" title="1.下载Node.js"></a>1.下载Node.js</h1><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/" title="Node.js官网-下载地址">Node.js官网-下载地址</a><br><img src="http://qinsouth.cn/Node.js/1%E8%BF%9B%E5%85%A5node%E5%AE%98%E7%BD%91.png" alt="进入Node官网" title="进入Node官网"><br>我选的是当前发布版，都可以的；<br>这里会自动匹配你电脑的系统给到推荐下载的版本，点击即开始下载，也可点击下方“其他下载”自行选择。</p>
-<h1 id="2-开始安装"><a href="#2-开始安装" class="headerlink" title="2.开始安装"></a>2.开始安装</h1><p>①下载完成后，双击安装程序，开始安装Node.js<br>②点击勾选，接受，再点击next<br>③安装路径默认在C:\Program Files下面，建议点击【change】修改到D盘或其他盘，然后点击next<br>④基本选择默认，然后next<br><img src="http://qinsouth.cn/Node.js/2%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A21.png" alt="Node安装界面-1" title="Node安装界面-1"><br>⑤如下图框中所示，不选，点击next<br><img src="http://qinsouth.cn/Node.js/3%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A22.png" alt="Node安装界面-2" title="Node安装界面-2"><br>⑥点击Install，进行安装<br>⑦点击finish，完成安装<br>更新新的node版本时只需下载新版本的安装本重走一遍安装程序即可完成。</p>
-<h1 id="3-查看版本号，验证安装成功"><a href="#3-查看版本号，验证安装成功" class="headerlink" title="3.查看版本号，验证安装成功"></a>3.查看版本号，验证安装成功</h1><p>win+R输入cmd（管理员权限键入），如图所示标识安装成功：<br><img src="http://qinsouth.cn/Node.js/4cmd%E6%9F%A5%E7%9C%8Bnode%E7%89%88%E6%9C%AC.png" alt="cmd查看node版本" title="cmd查看node版本"><br>新版的Node.js已自带npm，安装Node.js时会一起安装，npm的作用就是对Node.js依赖的包进行管理，也可以理解为用来安装/卸载Node.js需要装的东西。</p>
-<h1 id="4-环境配置"><a href="#4-环境配置" class="headerlink" title="4.环境配置"></a>4.环境配置</h1><p>这里的环境配置主要配置的是npm安装的全局模块所在的路径以及缓存cache的路径。<br>默认情况下，我们在执行【npm install XXXX -g】安装模块时（可选参数-g，g代表global全局安装的意思），下载的模板，一个全局包，这个包的默认存放路径为【C:\Users\用户名\AppData\Roaming\npm\node_modules】下，这样会占据C盘空间，可以通过CMD指令【npm root -g】查看。<br><img src="http://qinsouth.cn/Node.js/5cmd%E6%9F%A5%E7%9C%8B%E5%8C%85%E9%BB%98%E8%AE%A4%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png" alt="cmd查看包默认存放位置" title="cmd查看包默认存放位置"><br>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【E:\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：<br><img src="http://qinsouth.cn/Node.js/6%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="添加文件夹" title="添加文件夹"><br>创建完两个空文件夹之后，打开cmd命令窗口，输入以下两条指令，注意路径要用你的</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;E:\nodejs\node_global&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;E:\nodejs\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://qinsouth.cn/Node.js/7%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E6%A8%A1%E5%9D%97%E5%8F%8A%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%B7%AF%E5%BE%84.png" alt="配置安装全局模块及缓存文件夹的路径" title="配置安装全局模块及缓存文件夹的路径"><br>npm config list 这条指令可在配置好环境变量后再输入查看 ↓↓↓<br>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”<br><img src="http://qinsouth.cn/Node.js/8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE1.png" alt="配置环境变量1" title="配置环境变量1"><br>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，输入【E:\nodejs\node_global\node_modules】<br><img src="http://qinsouth.cn/Node.js/9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE2.png" alt="配置环境变量2" title="配置环境变量2"><br>将【用户变量】下的【Path】修改为【E:\nodejs\node_global】<br><img src="http://qinsouth.cn/Node.js/10%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE3.png" alt="配置环境变量3" title="配置环境变量3"><br><img src="http://qinsouth.cn/Node.js/11%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE4.png" alt="配置环境变量4" title="配置环境变量4"></p>
-<h1 id="5-npm部分常用命令"><a href="#5-npm部分常用命令" class="headerlink" title="5.npm部分常用命令"></a>5.npm部分常用命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">• npm -v：查看npm安装的版本。</span><br><span class="line">• npm init：会引导你创建一个package.json文件，包括名称、版本、作者等信息。</span><br><span class="line">• npm list：查看当前目录下已安装的node包。</span><br><span class="line">• npm ls：查看当前目录下已安装的node包。</span><br><span class="line">• npm install moduleNames：安装Node模块到本地目录node_modules下。</span><br><span class="line">• npm install &lt; name &gt; -g：将包安装到全局环境中。</span><br><span class="line">• npm install &lt; name &gt; --save：安装的同时，将信息写入package.json中，项目路径中如果有package.json文件时，直接使用npm install方法就可以根据dependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm install &lt; name&gt; --save-dev：安装的同时，将信息写入package.json中项目路径中如果有package.json文件时，直接使用npm install方法就可以根据devDependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm uninstall moudleName：卸载node模块。</span><br></pre></td></tr></table></figure>
-
-<h1 id="6-配置淘宝镜像"><a href="#6-配置淘宝镜像" class="headerlink" title="6.配置淘宝镜像"></a>6.配置淘宝镜像</h1><p>通过npm安装模块时都是去国外的镜像下载的，但是有的时候由于网络等原因导致安装模块失败，好在阿里有团队维护国内镜像<a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/NPM?from=tnpm" title="淘宝NPM镜像">淘宝NPM镜像</a>，上面有使用说明，大家可自行查看。<br><img src="http://qinsouth.cn/Node.js/12%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png" alt="淘宝镜像截图1" title="添加淘宝镜像截图1"><br><img src="http://qinsouth.cn/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png" alt="淘宝镜像截图2" title="淘宝镜像截图2"></p>
-<h1 id="7-测试"><a href="#7-测试" class="headerlink" title="7.测试"></a>7.测试</h1><p>配置完成后，安装个module测试下，我们就安装最常用的express模块，打开cmd窗口，输入如下命令进行模块的全局安装：<br><code>npm install express -g   // -g是全局安装的意思</code></p>
-<p>Node.js安装配置完成！</p>
-<h1 id="后记-感谢："><a href="#后记-感谢：" class="headerlink" title="后记-感谢："></a>后记-感谢：</h1><p>本文讲解流程及内容参照以下两个链接，感谢两位作者，本文图片全部是自行截图配文字上传<br>博客园-刘奇云：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuqiyun/p/8133904.html" title="Node.js安装及环境配置之Windows篇">Node.js安装及环境配置之Windows篇</a><br>CSDN-huangfuyk：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42881768/article/details/105028164" title="Node.js的安装及环境配置【超详细】">Node.js的安装及环境配置【超详细】</a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>实践是检验真理的唯一标准</strong>。感谢你的观看！希望本篇文章对你搭建Hexo博客及搭配Next主题的简单个性化有所帮助。<br>2020年8月底开始学习并搭建个人博客，刚开始主要在B站up主<a target="_blank" rel="noopener" href="https://space.bilibili.com/384068749/video" title="CodeSheep">CodeSheep</a>的视频学习（在其早期的视频里），他主要传递的是搭建个人博客以及坚持写博客总结归纳自己的技术面等的重要性，我个人也早有打算为自己搭建个人博客。<br>2020年9月6日起正式开始，使用Hexo博客框架开始搭建，而搭配Next主题及其简单美化、添加辅助性小插件等，来源于学习其他优质个人博客网站效果及百度搜索个性化教程。<br>大多数教程有一定时间，与当下搭建个人博客版本不符，需要同时自行解读主题配置文件。本片文章内容所囊括的大多数功能是结合Next的主题配置文件完成的，没有那么繁琐。<br>搭建个人博客不止Hexo框架，还有其他众多可选的框架，请至本文 <a href="#else">搭建个人博客的其他选择</a> 处观看</p>
+<h1 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h1><p>• Hexo版本：v5.1.1（2020年8月23日发布）（<a target="_blank" rel="noopener" href="https://space.bilibili.com/384068749/video" title="官方文档">官方文档</a>）（<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo" title="GitHub仓库">GitHub仓库</a>）<br>• Next版本：v7.8.0（2020年4月1日发布）（<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next" title="GitHub仓库">GitHub仓库</a>）<br>• Hexo（2020年9月15日发布5.2.0，差别不大不影响以下配置，详情可看Hexo的<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/releases" title="GitHub版本说明">GitHub版本说明</a>）<br>• Next主题有一个老版本的官方文档，可能是我没找到新版本的官方文档站，但我个人网站里部分功能也是参照这里的配置来的，对我有一定帮助，所以也贴出来：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/" title="Next v5.1.4官方文档">Next v5.1.4官方文档</a></p>
+<h1 id="效果展示及GitHub链接"><a href="#效果展示及GitHub链接" class="headerlink" title="效果展示及GitHub链接"></a>效果展示及GitHub链接</h1><p>我的个人博客网站链接：<a href="https://www.qinsouth.cn/">https://www.qinsouth.cn/</a><br>GitHub链接：<a target="_blank" rel="noopener" href="https://github.com/qinsouth-575/qinsouth-575.github.io">https://github.com/qinsouth-575/qinsouth-575.github.io</a></p>
+<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="第一步：安装Node-js"><a href="#第一步：安装Node-js" class="headerlink" title="第一步：安装Node.js"></a>第一步：安装Node.js</h3><p>详情请见本站相关文章：<a href="https://www.qinsouth.cn/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/" title="Node.js的安装及环境配配置">《Node.js的安装及环境配配置》</a>，若已安装，可直接跳过本步骤</p>
+<h3 id="第二步：安装Git"><a href="#第二步：安装Git" class="headerlink" title="第二步：安装Git"></a>第二步：安装Git</h3><p>详情请见本站相关文章：《Git下载安装GitHub账号申请及配置》，若已安装，可直接跳过本步骤</p>
+<h3 id="第三步：创建GitHub仓库"><a href="#第三步：创建GitHub仓库" class="headerlink" title="第三步：创建GitHub仓库"></a>第三步：创建GitHub仓库</h3><h4 id="登录到GitHub"><a href="#登录到GitHub" class="headerlink" title="登录到GitHub"></a>登录到GitHub</h4><p>使用GitHub把个人博客部署到远端的公服上去，没有GitHub可以使用码云，或者创建GitHub账号都行<br>登录到GitHub，点击左侧的绿色按钮：Create repository或New进入创建仓库页面<br>如果你尚未创建并拥有第一个项目，则会显示Create repository按钮。</p>
+<h4 id="创建一个新的GitHub仓库"><a href="#创建一个新的GitHub仓库" class="headerlink" title="创建一个新的GitHub仓库"></a>创建一个新的GitHub仓库</h4><p>用户部署个人博客的GitHub仓库的命名必须符合特定要求才行<br>Repository name 必须是 个人Github用户名.github.io 才行，描述随便写即可<br>我的仓库名显示不正确是因为已经创了一个同名的仓库，所以无法再创建<br><img src="">创建好之后暂时放在这里，等待Hexo安装好，将网址配置进Hexo的网站配置文件中<br>如我的GitHub博客仓库网址：<a target="_blank" rel="noopener" href="https://github.com/qinsouth-575/qinsouth-575.github.io.git">https://github.com/qinsouth-575/qinsouth-575.github.io.git</a></p>
+<h3 id="正式搭建"><a href="#正式搭建" class="headerlink" title="正式搭建"></a>正式搭建</h3><p>本文仍在编写中</p>
+<h1 id="Next主题简单个性化"><a href="#Next主题简单个性化" class="headerlink" title="Next主题简单个性化"></a>Next主题简单个性化</h1><h2 id="本文仍在编写中"><a href="#本文仍在编写中" class="headerlink" title="本文仍在编写中"></a>本文仍在编写中</h2><h1 id="搭建个人博客的其他选择"><a href="#搭建个人博客的其他选择" class="headerlink" title="搭建个人博客的其他选择"></a><a name="else">搭建个人博客的其他选择</a></h1><h2 id="1-搭建动态博客"><a href="#1-搭建动态博客" class="headerlink" title="1.搭建动态博客"></a>1.搭建动态博客</h2><p>动态博客：有前台后端<br>后端可以用各种技术来写，php、Python、C#、Java等都可以  <br>CodeSheep的动态博客，是在学SpringBoot时练手做的，基于SpringBoot+thymeleaf+MySQL的<br>有后台可以管理，可以登录、注册、进行管理操作，类似于博客系统 CSDN、简书这些<br>灵活性比较高、功能更强一些，开发也更难，需要懂前后端，搭建好要找服务器部署，比较麻烦，难度比较高</p>
+<h2 id="2-直接使用成熟的框架"><a href="#2-直接使用成熟的框架" class="headerlink" title="2.直接使用成熟的框架"></a>2.直接使用成熟的框架</h2><p>[WordPress](wordpress.org WordPress)（基于php实现）<br>动态的CMS系统（博客系统），开源的用来构建一个网站或博客的。使用比较简单。进入文档有详细的教程。 很大程度的自由div</p>
+<h2 id="3-其他静态的博客框架"><a href="#3-其他静态的博客框架" class="headerlink" title="3.其他静态的博客框架"></a>3.其他静态的博客框架</h2><p>部署简单，功能简单，展示即可，都有官方文档可参考</p>
+<ol>
+<li>[jekyllrb](jekyllrb.com jekyllrb) </li>
+<li>[Hugo](gohugo.org Hugo) Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署</li>
+<li>[VuePress](vuepress.vuejs.org VuePress) Vue驱动的静态网站生成器</li>
+<li>[Solo](solo.b3log.org Solo) 一款小而美的Java博客系统，专为程序员设计</li>
+</ol>
+<h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>到这里关于Hexo博客搭建、搭配Next主题简单个性化等的内容全部讲完<br>感谢你的观看，希望对你有所帮助！<br>尊重知识产权-以下是本文参考文档链接，感谢几位作者！</p>
 
     </div>
 
@@ -335,7 +323,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://www.qinsouth.cn/2020/09/11/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E9%85%8D%E7%BD%AE/" title="Node.js的安装及环境配配置">http://www.qinsouth.cn/2020/09/11/Node.js的安装及环境配配置/</a>
+    <a href="http://www.qinsouth.cn/2020/09/18/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/" title="Hexo博客搭建及搭配Next主题简单个性化教程">http://www.qinsouth.cn/2020/09/18/Hexo博客搭建及搭配Next主题简单个性化教程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -376,9 +364,6 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Node-js/" rel="tag"><i class="fa fa-tag"></i> Node.js</a>
-              <a href="/tags/npm/" rel="tag"><i class="fa fa-tag"></i> npm</a>
-              <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" rel="tag"><i class="fa fa-tag"></i> 环境搭建</a>
               <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
               <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 个人博客</a>
           </div>
@@ -389,13 +374,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/09/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%BF%85%E9%A1%BB%E5%86%99%EF%BC%81%E5%A6%82%E4%BD%95%E5%86%99%EF%BC%9F/" rel="prev" title="技术博客必须写！如何写？">
-      <i class="fa fa-chevron-left"></i> 技术博客必须写！如何写？
+    <a href="/2020/09/18/Git%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85GitHub%E8%B4%A6%E5%8F%B7%E7%94%B3%E8%AF%B7%E5%8F%8A%E9%85%8D%E7%BD%AE/" rel="prev" title="Git下载安装GitHub账号申请及配置">
+      <i class="fa fa-chevron-left"></i> Git下载安装GitHub账号申请及配置
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/09/12/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/" rel="next" title="Hexo博客搭建及搭配Next主题简单个性化教程">
-      Hexo博客搭建及搭配Next主题简单个性化教程 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -459,7 +441,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%8B%E8%BD%BDNode-js"><span class="nav-number">1.</span> <span class="nav-text">1.下载Node.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">2.开始安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC%E5%8F%B7%EF%BC%8C%E9%AA%8C%E8%AF%81%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-number">3.</span> <span class="nav-text">3.查看版本号，验证安装成功</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">4.环境配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-npm%E9%83%A8%E5%88%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">5.</span> <span class="nav-text">5.npm部分常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-%E9%85%8D%E7%BD%AE%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F"><span class="nav-number">6.</span> <span class="nav-text">6.配置淘宝镜像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E6%B5%8B%E8%AF%95"><span class="nav-number">7.</span> <span class="nav-text">7.测试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0-%E6%84%9F%E8%B0%A2%EF%BC%9A"><span class="nav-number">8.</span> <span class="nav-text">后记-感谢：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%89%88%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA%E5%8F%8AGitHub%E9%93%BE%E6%8E%A5"><span class="nav-number">3.</span> <span class="nav-text">效果展示及GitHub链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="nav-number">4.</span> <span class="nav-text">Hexo博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">4.1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">4.1.1.</span> <span class="nav-text">第一步：安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85Git"><span class="nav-number">4.1.2.</span> <span class="nav-text">第二步：安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E5%88%9B%E5%BB%BAGitHub%E4%BB%93%E5%BA%93"><span class="nav-number">4.1.3.</span> <span class="nav-text">第三步：创建GitHub仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%99%BB%E5%BD%95%E5%88%B0GitHub"><span class="nav-number">4.1.3.1.</span> <span class="nav-text">登录到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84GitHub%E4%BB%93%E5%BA%93"><span class="nav-number">4.1.3.2.</span> <span class="nav-text">创建一个新的GitHub仓库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%BC%8F%E6%90%AD%E5%BB%BA"><span class="nav-number">4.1.4.</span> <span class="nav-text">正式搭建</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96"><span class="nav-number">5.</span> <span class="nav-text">Next主题简单个性化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E6%96%87%E4%BB%8D%E5%9C%A8%E7%BC%96%E5%86%99%E4%B8%AD"><span class="nav-number">5.1.</span> <span class="nav-text">本文仍在编写中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%85%B6%E4%BB%96%E9%80%89%E6%8B%A9"><span class="nav-number">6.</span> <span class="nav-text">搭建个人博客的其他选择</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%90%AD%E5%BB%BA%E5%8A%A8%E6%80%81%E5%8D%9A%E5%AE%A2"><span class="nav-number">6.1.</span> <span class="nav-text">1.搭建动态博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%E6%88%90%E7%86%9F%E7%9A%84%E6%A1%86%E6%9E%B6"><span class="nav-number">6.2.</span> <span class="nav-text">2.直接使用成熟的框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%85%B6%E4%BB%96%E9%9D%99%E6%80%81%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6"><span class="nav-number">6.3.</span> <span class="nav-text">3.其他静态的博客框架</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0-%E6%84%9F%E8%B0%A2"><span class="nav-number">7.</span> <span class="nav-text">后记 - 感谢</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -475,20 +457,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -534,13 +516,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">12k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
 </div>
   <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">湘ICP备2020019306号 </a>
       <img src="/images/ForTheRecordIcon.png" style="display: inline-block;vertical-align: middle;">
