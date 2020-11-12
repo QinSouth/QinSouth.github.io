@@ -39,7 +39,7 @@
 <meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE2.png">
 <meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/10%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE3.png">
 <meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/11%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE4.png">
-<meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png">
+<meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/12%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png">
 <meta property="og:image" content="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png">
 <meta property="article:published_time" content="2020-09-12T14:07:31.000Z">
 <meta property="article:modified_time" content="2020-09-12T17:01:22.000Z">
@@ -308,7 +308,7 @@
 <p><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/7%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E6%A8%A1%E5%9D%97%E5%8F%8A%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%B7%AF%E5%BE%84.png" alt="配置安装全局模块及缓存文件夹的路径" title="配置安装全局模块及缓存文件夹的路径">npm config list 这条指令可在配置好环境变量后再输入查看 ↓↓↓<br>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE1.png" alt="配置环境变量1" title="配置环境变量1">进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，输入【E:\nodejs\node_global\node_modules】<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE2.png" alt="配置环境变量2" title="配置环境变量2">将【用户变量】下的【Path】修改为【E:\nodejs\node_global】<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/10%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE3.png" alt="配置环境变量3" title="配置环境变量3"><br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/11%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE4.png" alt="配置环境变量4" title="配置环境变量4"></p>
 <h1 id="五、npm部分常用命令"><a href="#五、npm部分常用命令" class="headerlink" title="五、npm部分常用命令"></a>五、npm部分常用命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">• npm -v：查看npm安装的版本。</span><br><span class="line">• npm init：会引导你创建一个package.json文件，包括名称、版本、作者等信息。</span><br><span class="line">• npm list：查看当前目录下已安装的node包。</span><br><span class="line">• npm ls：查看当前目录下已安装的node包。</span><br><span class="line">• npm install moduleNames：安装Node模块到本地目录node_modules下。</span><br><span class="line">• npm install &lt; name &gt; -g：将包安装到全局环境中。</span><br><span class="line">• npm install &lt; name &gt; --save：安装的同时，将信息写入package.json中，项目路径中如果有package.json文件时，直接使用npm install方法就可以根据dependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm install &lt; name&gt; --save-dev：安装的同时，将信息写入package.json中项目路径中如果有package.json文件时，直接使用npm install方法就可以根据devDependencies配置安装所有的依赖包，这样代码提交到git时，就不用提交node_modules这个文件夹了。</span><br><span class="line">• npm uninstall moudleName：卸载node模块。</span><br></pre></td></tr></table></figure>
 
-<h1 id="六、配置淘宝镜像"><a href="#六、配置淘宝镜像" class="headerlink" title="六、配置淘宝镜像"></a>六、配置淘宝镜像</h1><p>通过npm安装模块时都是去国外的镜像下载的，但是有的时候由于网络等原因导致安装模块失败，好在阿里有团队维护国内镜像<a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/NPM?from=tnpm" title="淘宝NPM镜像">淘宝NPM镜像</a>，上面有使用说明，大家可自行查看。<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png" alt="淘宝镜像截图1" title="添加淘宝镜像截图1"><br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png" alt="淘宝镜像截图2" title="淘宝镜像截图2"></p>
+<h1 id="六、配置淘宝镜像"><a href="#六、配置淘宝镜像" class="headerlink" title="六、配置淘宝镜像"></a>六、配置淘宝镜像</h1><p>通过npm安装模块时都是去国外的镜像下载的，但是有的时候由于网络等原因导致安装模块失败，好在阿里有团队维护国内镜像<a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/NPM?from=tnpm" title="淘宝NPM镜像">淘宝NPM镜像</a>，上面有使用说明，大家可自行查看。<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/12%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE1.png" alt="淘宝镜像截图1" title="添加淘宝镜像截图1"><br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/Node.js/13%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E6%88%AA%E5%9B%BE2.png" alt="淘宝镜像截图2" title="淘宝镜像截图2"></p>
 <h1 id="七、测试"><a href="#七、测试" class="headerlink" title="七、测试"></a>七、测试</h1><p>配置完成后，安装个module测试下，我们就安装最常用的express模块，打开cmd窗口，输入如下命令进行模块的全局安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install express -g    //-g是全局安装的意思</span><br></pre></td></tr></table></figure>
 
@@ -476,20 +476,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
