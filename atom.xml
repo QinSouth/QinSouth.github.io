@@ -6,7 +6,7 @@
   <link href="http://www.qinsouth.cn/atom.xml" rel="self"/>
   
   <link href="http://www.qinsouth.cn/"/>
-  <updated>2020-11-08T15:41:11.000Z</updated>
+  <updated>2020-11-15T15:23:23.000Z</updated>
   <id>http://www.qinsouth.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.qinsouth.cn/2020/11/08/Adobe%20Flash%20CS6%20%E4%B8%AD%E6%96%87%E7%B2%BE%E7%AE%80%E7%89%88%E5%AE%89%E8%A3%85/"/>
     <id>http://www.qinsouth.cn/2020/11/08/Adobe%20Flash%20CS6%20%E4%B8%AD%E6%96%87%E7%B2%BE%E7%AE%80%E7%89%88%E5%AE%89%E8%A3%85/</id>
     <published>2020-11-08T12:19:21.000Z</published>
-    <updated>2020-11-08T15:41:11.000Z</updated>
+    <updated>2020-11-15T15:23:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>女朋友大三，专业课里包含学习Flash，给她电脑安装破解版的软件，过程有一点点小曲折，感觉可以对有需要的朋友有一定帮助，就写了本文。<br>正文中有关于Adobe Flash Professional CS6的简单介绍、安装文件(百度网盘)、安装问题解决及Win10高分辨率下软件字体过小的问题解决方法等，希望能对你有所帮助！感谢观看。</p><a id="more"></a><p>Adobe Flash CS6是用于创建动画和多媒体内容的强大的创作平台。Adobe Flash CS6设计身临其境，而且在台式计算机和平板电脑、智能手机和电视等多种设备中都能呈现一致效果的互动体验。新版Flash Professional Cs6附带了可生成 sprite 表单和访问专用设备的本地扩展。可以锁定最新的 Adobe Flash Player 和 AIR 运行时以及 Android 和 iOS 设备平台。<br>介绍内容采自<a href="https://baike.baidu.com/item/flash%20cs6" title="flash cs6">百度百科-flash cs6</a></p><h1 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h1><p>安装成功后，在启动软件时总会引发一个报错，所以当时尝试了很多的下载网站，找的也都是绿色中文版的，发现一个规律就是：文件基本相同，安装同样简单。<br>阴差阳错解决了启动时缺少文件的报错（下文有写到）。<br>也最终导致，实在是忘记了最终用的软件是在哪个平台下载的，所以只好上传到了自己的百度网盘，以下是下载地址：</p><h1 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h1><p>可能由于电脑的系统是Windows10，总会提示一个缺少</p>]]></content>
+    <content type="html"><![CDATA[<p>女朋友大三，专业课里包含学习Flash，给她电脑安装破解版的软件，过程有一点点小曲折，感觉可以对有需要的朋友有一定帮助，就写了本文。<br>正文中有关于Adobe Flash Professional CS6的简单介绍、安装文件(百度网盘)、安装问题解决及Win10高分辨率下软件字体过小的问题解决方法等，希望能对你有所帮助！感谢观看。</p><a id="more"></a><p>Adobe Flash CS6是用于创建动画和多媒体内容的强大的创作平台。Adobe Flash CS6设计身临其境，而且在台式计算机和平板电脑、智能手机和电视等多种设备中都能呈现一致效果的互动体验。新版Flash Professional Cs6附带了可生成 sprite 表单和访问专用设备的本地扩展。可以锁定最新的 Adobe Flash Player 和 AIR 运行时以及 Android 和 iOS 设备平台。<br>介绍内容采自<a href="https://baike.baidu.com/item/flash%20cs6" title="flash cs6">百度百科-flash cs6</a></p><h1 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h1><p>尝试了很多的下载网站，找的也都是绿色中文版的，也发现了下载后的文件基本都是相同，安装过程一样并且简单。<br>也最终导致，实在是忘记了最终用的软件是在哪个平台下载的，所以只好上传到了自己的百度网盘，下载地址：<a href="https://pan.baidu.com/s/1LwYAP3_wMcDTSwBUHXIv6A" title="FlashCS6_Package">FlashCS6_Package</a><br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/1baiduwangpanwenjian.png" alt="1-百度网盘文件" title="百度网盘文件"></p><h1 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h1><p>下载成功后，将adboeflash.rar解压到你计划的软件安装位置，解压后文件列表如下：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/2wenjianmulu.png" alt="2-软件文件列表" title="软件文件列表">接下来只需要启动QuickSetup.exe点击安装即可。<br>需要卸载软件也是点击此程序，安装时所显示的“安装”按钮将显示为“卸载”。<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/3xiezaiziyang.png" alt="3-卸载按钮" title="卸载按钮"></p><h1 id="三、解决启动报错"><a href="#三、解决启动报错" class="headerlink" title="三、解决启动报错"></a>三、解决启动报错</h1><p>尝试过多个安装包，每次安装成功后，在启动软件时总会引发一个同样的报错：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/4queshaowenjianbaocuo.png" alt="4-缺少mfc100u.dll启动报错" title="缺少mfc100u.dll启动报错"><br>而，会遇到这个问题的我们，其实我们的电脑系统也是有mfc100u.dll这个文件的，但经过一些补充环境或者下载同名文件放入系统文件夹替换其的方式也无法解决，后将网上下载的mfc100u.dll组件放入软件安装目录：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/5fangruwenjian.png" alt="5-将下载的mfc100u.dll放入软件目录" title="将下载的mfc100u.dll放入软件目录">再次启动即发现已经解决问题（文件和软件文件一起放在百度网盘的下载文件中）：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/6qidongruanjian.png" alt="6-启动成功" title="启动成功"></p><h1 id="四、解决分辨率问题"><a href="#四、解决分辨率问题" class="headerlink" title="四、解决分辨率问题"></a>四、解决分辨率问题</h1><p>一些分辨率较高的电脑，在打开软件时会发现字体很小，并且软件本身的设置也不能调大字体到适合的尺寸（如果没有此问题请忽略）。<br>下面为解决办法：右键【Adobe Flash Professional CS6】快捷方式选择“属性”并按以下步骤设置<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/7xuanzejianrongxing.png" alt="7-选中兼容性选项卡" title="选中兼容性选项卡"><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/8shezhibingtuichu.png" alt="8-设置并退出" title="设置并退出"></p><h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>到这里关于Adobe Flash CS6 中文精简版安装设置等的内容全部讲完<br>感谢你的观看，希望对遇到此问题的你有所帮助！<br>尊重知识产权-以下是本文参考文档链接，感谢两个网站！<br>MindManager中文官网-常见问题-教程：<a href="https://www.mindmanager.cn/changjianwenti/changjianwenti-queshao-mfc100u-dll.html" title="缺少mfc100u.dll无法启动的难题">缺少mfc100u.dll无法启动的难题</a><br>老毛桃-常见问题-教程：<a href="http://www.laoshantao.net/cjwt/1964.html" title="两种方法解决ps错误代码16">两种方法解决ps错误代码16</a></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;女朋友大三，专业课里包含学习Flash，给她电脑安装破解版的软件，过程有一点点小曲折，感觉可以对有需要的朋友有一定帮助，就写了本文。&lt;br&gt;正文中有关于Adobe Flash Professional CS6的简单介绍、安装文件(百度网盘)、安装问题解决及Win10高分辨率下软件字体过小的问题解决方法等，希望能对你有所帮助！感谢观看。&lt;/p&gt;</summary>
@@ -139,9 +139,9 @@
     
     <category term="个人博客" scheme="http://www.qinsouth.cn/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="CodeSheep" scheme="http://www.qinsouth.cn/tags/CodeSheep/"/>
-    
     <category term="study" scheme="http://www.qinsouth.cn/tags/study/"/>
+    
+    <category term="CodeSheep" scheme="http://www.qinsouth.cn/tags/CodeSheep/"/>
     
   </entry>
   
@@ -162,9 +162,9 @@
     <category term="study" scheme="http://www.qinsouth.cn/categories/study/"/>
     
     
-    <category term="CodeSheep" scheme="http://www.qinsouth.cn/tags/CodeSheep/"/>
-    
     <category term="study" scheme="http://www.qinsouth.cn/tags/study/"/>
+    
+    <category term="CodeSheep" scheme="http://www.qinsouth.cn/tags/CodeSheep/"/>
     
   </entry>
   
