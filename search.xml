@@ -6,9 +6,9 @@
     <content><![CDATA[<p>女朋友大三，专业课里包含学习Flash，给她电脑安装破解版的软件，过程有一点点小曲折，感觉可以对有需要的朋友有一定帮助，就写了本文。<br>正文中有关于Adobe Flash Professional CS6的简单介绍、安装文件(百度网盘)、安装问题解决及Win10高分辨率下软件字体过小的问题解决方法等，希望能对你有所帮助！感谢观看。</p>
 <a id="more"></a>
 <p>Adobe Flash CS6是用于创建动画和多媒体内容的强大的创作平台。Adobe Flash CS6设计身临其境，而且在台式计算机和平板电脑、智能手机和电视等多种设备中都能呈现一致效果的互动体验。新版Flash Professional Cs6附带了可生成 sprite 表单和访问专用设备的本地扩展。可以锁定最新的 Adobe Flash Player 和 AIR 运行时以及 Android 和 iOS 设备平台。<br>介绍内容采自<a href="https://baike.baidu.com/item/flash%20cs6" title="flash cs6">百度百科-flash cs6</a></p>
-<h1 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h1><p>尝试了很多的下载网站，找的也都是绿色中文版的，也发现了下载后的文件基本都是相同，安装过程一样并且简单。<br>也最终导致，实在是忘记了最终用的软件是在哪个平台下载的，所以只好上传到了自己的百度网盘，下载地址：<a href="https://pan.baidu.com/s/1LwYAP3_wMcDTSwBUHXIv6A" title="FlashCS6_Package">FlashCS6_Package</a><br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/1baiduwangpanwenjian.png" alt="1-百度网盘文件" title="百度网盘文件"></p>
+<h1 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h1><p>尝试了很多的下载网站，找的也都是绿色中文版的，也发现了下载后的文件基本都是相同，安装过程一样并且简单。<br>也最终导致，实在是忘记了最终用的软件是在哪个平台下载的，所以只好上传到了自己的百度网盘，下载地址：<a href="https://pan.baidu.com/s/1LwYAP3_wMcDTSwBUHXIv6A" title="FlashCS6_Package">FlashCS6_Package</a>，提取码：qotw<br><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/1baiduwangpanwenjian.png" alt="1-百度网盘文件" title="百度网盘文件"></p>
 <h1 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h1><p>下载成功后，将adboeflash.rar解压到你计划的软件安装位置，解压后文件列表如下：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/2wenjianmulu.png" alt="2-软件文件列表" title="软件文件列表">接下来只需要启动QuickSetup.exe点击安装即可。<br>需要卸载软件也是点击此程序，安装时所显示的“安装”按钮将显示为“卸载”。<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/3xiezaiziyang.png" alt="3-卸载按钮" title="卸载按钮"></p>
-<h1 id="三、解决启动报错"><a href="#三、解决启动报错" class="headerlink" title="三、解决启动报错"></a>三、解决启动报错</h1><p>尝试过多个安装包，每次安装成功后，在启动软件时总会引发一个同样的报错：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/4queshaowenjianbaocuo.png" alt="4-缺少mfc100u.dll启动报错" title="缺少mfc100u.dll启动报错"><br>而，会遇到这个问题的我们，其实我们的电脑系统也是有mfc100u.dll这个文件的，但经过一些补充环境或者下载同名文件放入系统文件夹替换其的方式也无法解决，后将网上下载的mfc100u.dll组件放入软件安装目录：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/5fangruwenjian.png" alt="5-将下载的mfc100u.dll放入软件目录" title="将下载的mfc100u.dll放入软件目录">再次启动即发现已经解决问题（文件和软件文件一起放在百度网盘的下载文件中）：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/6qidongruanjian.png" alt="6-启动成功" title="启动成功"></p>
+<h1 id="三、解决启动报错"><a href="#三、解决启动报错" class="headerlink" title="三、解决启动报错"></a>三、解决启动报错</h1><p>尝试过多个安装包，每次安装成功后，在启动软件时总会引发一个同样的报错：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/4queshaowenjianbaocuo.png" alt="4-缺少mfc100u.dll启动报错" title="缺少mfc100u.dll启动报错">而，会遇到这个问题的我们，其实我们的电脑系统也是有mfc100u.dll这个文件的，但经过一些补充环境或者下载同名文件放入系统文件夹替换其的方式也无法解决，后将网上下载的mfc100u.dll组件放入软件安装目录：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/5fangruwenjian.png" alt="5-将下载的mfc100u.dll放入软件目录" title="将下载的mfc100u.dll放入软件目录">再次启动即发现已经解决问题（文件和软件文件一起放在百度网盘的下载文件中）：<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/6qidongruanjian.png" alt="6-启动成功" title="启动成功"></p>
 <h1 id="四、解决分辨率问题"><a href="#四、解决分辨率问题" class="headerlink" title="四、解决分辨率问题"></a>四、解决分辨率问题</h1><p>一些分辨率较高的电脑，在打开软件时会发现字体很小，并且软件本身的设置也不能调大字体到适合的尺寸（如果没有此问题请忽略）。<br>下面为解决办法：右键【Adobe Flash Professional CS6】快捷方式选择“属性”并按以下步骤设置<img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/7xuanzejianrongxing.png" alt="7-选中兼容性选项卡" title="选中兼容性选项卡"><img src="http://qinsouthblog.oss-cn-guangzhou.aliyuncs.com/FlashCS6/8shezhibingtuichu.png" alt="8-设置并退出" title="设置并退出"></p>
 <h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>到这里关于Adobe Flash CS6 中文精简版安装设置等的内容全部讲完<br>感谢你的观看，希望对遇到此问题的你有所帮助！<br>尊重知识产权-以下是本文参考文档链接，感谢两个网站！<br>MindManager中文官网-常见问题-教程：<a href="https://www.mindmanager.cn/changjianwenti/changjianwenti-queshao-mfc100u-dll.html" title="缺少mfc100u.dll无法启动的难题">缺少mfc100u.dll无法启动的难题</a><br>老毛桃-常见问题-教程：<a href="http://www.laoshantao.net/cjwt/1964.html" title="两种方法解决ps错误代码16">两种方法解决ps错误代码16</a></p>
 ]]></content>
@@ -18,6 +18,40 @@
       <tags>
         <tag>Flash</tag>
         <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建及搭配Next主题简单个性化教程</title>
+    <url>/2020/09/23/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>Hexo是基于JavaScript的静态博客框架，是当下最流行的博客框架之一。Hexo有非常大的用户群体，其本身的插件和主题资源也非常丰富，同时作为静态博客也比较轻量、好上手、功能也简单一些。<br>我个人认为使用Hexo是初试博客搭建的最好选择。</p>
+<a id="more"></a>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>实践是检验真理的唯一标准</strong>。感谢你的观看！希望本篇文章对你搭建Hexo博客及搭配Next主题的简单个性化有所帮助。<br>2020年8月底开始学习并搭建个人博客，刚开始主要在B站up主<a href="https://space.bilibili.com/384068749/video" title="CodeSheep">CodeSheep</a>的视频学习（在其早期的视频里），他主要传递的是搭建个人博客以及坚持写博客总结归纳自己的技术面等的重要性，我个人也早有打算为自己搭建个人博客。<br>2020年9月6日起正式开始，使用Hexo博客框架开始搭建，而搭配Next主题及其简单美化、添加辅助性小插件等，来源于学习其他优质个人博客网站效果及百度搜索个性化教程。<br>大多数教程有一定时间，与当下搭建个人博客版本不符，需要同时自行解读主题配置文件。本片文章内容所囊括的大多数功能是结合Next的主题配置文件完成的，没有那么繁琐。<br>搭建个人博客不止Hexo框架，还有其他众多可选的框架，请至本文 <a href="#else">搭建个人博客的其他选择</a> 处观看</p>
+<h1 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h1><p>• Hexo版本：v5.1.1（2020年8月23日发布）（<a href="https://space.bilibili.com/384068749/video" title="官方文档">官方文档</a>）（<a href="https://github.com/hexojs/hexo" title="GitHub仓库">GitHub仓库</a>）<br>• Next版本：v7.8.0（2020年4月1日发布）（<a href="https://github.com/theme-next/hexo-theme-next" title="GitHub仓库">GitHub仓库</a>）<br>• Hexo（2020年9月15日发布5.2.0，差别不大不影响以下配置，详情可看Hexo的<a href="https://github.com/hexojs/hexo/releases" title="GitHub版本说明">GitHub版本说明</a>）<br>• Next主题有一个老版本的官方文档，可能是我没找到新版本的官方文档站，但我个人网站里部分功能也是参照这里的配置来的，对我有一定帮助，所以也贴出来：<a href="http://theme-next.iissnan.com/" title="Next v5.1.4官方文档">Next v5.1.4官方文档</a></p>
+<h1 id="效果展示及GitHub链接"><a href="#效果展示及GitHub链接" class="headerlink" title="效果展示及GitHub链接"></a>效果展示及GitHub链接</h1><p>我的个人博客网站链接：<a href="https://www.qinsouth.cn/">https://www.qinsouth.cn/</a><br>GitHub链接：<a href="https://github.com/qinsouth-575/qinsouth-575.github.io">https://github.com/qinsouth-575/qinsouth-575.github.io</a></p>
+<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><h3 id="第一步：安装Node-js"><a href="#第一步：安装Node-js" class="headerlink" title="第一步：安装Node.js"></a>第一步：安装Node.js</h3><p>详情请见本站相关文章：<a href="https://www.qinsouth.cn/2020/09/12/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Node.js的安装及环境配配置">《Node.js的安装及环境配配置》</a>，若已安装，可直接跳过本步骤</p>
+<h3 id="第二步：安装Git"><a href="#第二步：安装Git" class="headerlink" title="第二步：安装Git"></a>第二步：安装Git</h3><p>详情请见本站相关文章：<a href="https://www.qinsouth.cn/2020/09/18/Git%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85GitHub%E8%B4%A6%E5%8F%B7%E7%94%B3%E8%AF%B7%E5%8F%8A%E9%85%8D%E7%BD%AE/" title="Git下载安装GitHub账号申请及配置">《Git下载安装GitHub账号申请及配置》</a>，若已安装，可直接跳过本步骤</p>
+<h3 id="第三步：创建GitHub仓库"><a href="#第三步：创建GitHub仓库" class="headerlink" title="第三步：创建GitHub仓库"></a>第三步：创建GitHub仓库</h3><h4 id="1-登录到GitHub"><a href="#1-登录到GitHub" class="headerlink" title="1.登录到GitHub"></a>1.登录到GitHub</h4><p>使用GitHub把个人博客部署到远端的公服上去，没有GitHub可以使用码云，或者创建GitHub账号都行<br>登录到GitHub，点击左侧的绿色按钮：Create repository或New进入创建仓库页面<br>如果你尚未创建并拥有第一个项目，则会显示Create repository按钮。</p>
+<h4 id="2-创建一个新的GitHub仓库"><a href="#2-创建一个新的GitHub仓库" class="headerlink" title="2.创建一个新的GitHub仓库"></a>2.创建一个新的GitHub仓库</h4><p>用户部署个人博客的GitHub仓库的命名必须符合特定要求才行<br>Repository name 必须是 个人Github用户名.github.io 才行，描述随便写即可<br>我的仓库名显示不正确是因为已经创了一个同名的仓库，所以无法再创建<br><img src="">创建好之后暂时放在这里，等待Hexo安装好，将网址配置进Hexo的网站配置文件中<br>如我的GitHub博客仓库网址：<a href="https://github.com/qinsouth-575/qinsouth-575.github.io.git">https://github.com/qinsouth-575/qinsouth-575.github.io.git</a></p>
+<h3 id="第四步：正式搭建"><a href="#第四步：正式搭建" class="headerlink" title="第四步：正式搭建"></a>第四步：正式搭建</h3><p>本文仍在编写中</p>
+<h1 id="Next主题简单个性化"><a href="#Next主题简单个性化" class="headerlink" title="Next主题简单个性化"></a>Next主题简单个性化</h1><p>本文仍在编写中</p>
+<h1 id="搭建个人博客的其他选择"><a href="#搭建个人博客的其他选择" class="headerlink" title="搭建个人博客的其他选择"></a><a name="else">搭建个人博客的其他选择</a></h1><h2 id="1-搭建动态博客"><a href="#1-搭建动态博客" class="headerlink" title="1.搭建动态博客"></a>1.搭建动态博客</h2><p>动态博客：有前台后端<br>后端可以用各种技术来写，php、Python、C#、Java等都可以  <br>CodeSheep的动态博客，是在学SpringBoot时练手做的，基于SpringBoot+thymeleaf+MySQL的<br>有后台可以管理，可以登录、注册、进行管理操作，类似于博客系统 CSDN、简书这些<br>灵活性比较高、功能更强一些，开发也更难，需要懂前后端，搭建好要找服务器部署，比较麻烦，难度比较高</p>
+<h2 id="2-直接使用成熟的框架"><a href="#2-直接使用成熟的框架" class="headerlink" title="2.直接使用成熟的框架"></a>2.直接使用成熟的框架</h2><p><a href="https://wordpress.org/" title="WordPress">WordPress</a>（基于php实现）<br>动态的CMS系统（博客系统），开源的用来构建一个网站或博客的。使用比较简单。进入文档有详细的教程。 很大程度的自由div</p>
+<h2 id="3-其他静态的博客框架"><a href="#3-其他静态的博客框架" class="headerlink" title="3.其他静态的博客框架"></a>3.其他静态的博客框架</h2><p>部署简单，功能简单，展示即可，都有官方文档可参考</p>
+<ol>
+<li><a href="https://jekyllrb.com/" title="jekyllrb">jekyllrb</a> </li>
+<li><a href="https://www.gohugo.org/" title="Hugo">Hugo</a> Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署</li>
+<li><a href="https://vuepress.vuejs.org/" title="VuePress">VuePress</a> Vue驱动的静态网站生成器</li>
+<li><a href="https://b3log.org/solo/" title="Solo">Solo</a> 一款小而美的Java博客系统，专为程序员设计</li>
+</ol>
+<h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>到这里关于Hexo博客搭建、搭配Next主题简单个性化等的内容全部讲完<br>感谢你的观看，希望对你有所帮助！<br>尊重知识产权-以下是本文参考文档链接，感谢几位作者！</p>
+<p>本文仍在编辑中<br>抱歉，本文暂时烂尾了，很难受</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>个人博客</tag>
       </tags>
   </entry>
   <entry>
@@ -81,45 +115,11 @@
         <category>Git</category>
       </categories>
       <tags>
+        <tag>Hexo</tag>
+        <tag>个人博客</tag>
         <tag>Git</tag>
         <tag>GitHub</tag>
         <tag>环境搭建</tag>
-        <tag>Hexo</tag>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客搭建及搭配Next主题简单个性化教程</title>
-    <url>/2020/09/23/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%90%AD%E9%85%8DNext%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>Hexo是基于JavaScript的静态博客框架，是当下最流行的博客框架之一。Hexo有非常大的用户群体，其本身的插件和主题资源也非常丰富，同时作为静态博客也比较轻量、好上手、功能也简单一些。<br>我个人认为使用Hexo是初试博客搭建的最好选择。</p>
-<a id="more"></a>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>实践是检验真理的唯一标准</strong>。感谢你的观看！希望本篇文章对你搭建Hexo博客及搭配Next主题的简单个性化有所帮助。<br>2020年8月底开始学习并搭建个人博客，刚开始主要在B站up主<a href="https://space.bilibili.com/384068749/video" title="CodeSheep">CodeSheep</a>的视频学习（在其早期的视频里），他主要传递的是搭建个人博客以及坚持写博客总结归纳自己的技术面等的重要性，我个人也早有打算为自己搭建个人博客。<br>2020年9月6日起正式开始，使用Hexo博客框架开始搭建，而搭配Next主题及其简单美化、添加辅助性小插件等，来源于学习其他优质个人博客网站效果及百度搜索个性化教程。<br>大多数教程有一定时间，与当下搭建个人博客版本不符，需要同时自行解读主题配置文件。本片文章内容所囊括的大多数功能是结合Next的主题配置文件完成的，没有那么繁琐。<br>搭建个人博客不止Hexo框架，还有其他众多可选的框架，请至本文 <a href="#else">搭建个人博客的其他选择</a> 处观看</p>
-<h1 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h1><p>• Hexo版本：v5.1.1（2020年8月23日发布）（<a href="https://space.bilibili.com/384068749/video" title="官方文档">官方文档</a>）（<a href="https://github.com/hexojs/hexo" title="GitHub仓库">GitHub仓库</a>）<br>• Next版本：v7.8.0（2020年4月1日发布）（<a href="https://github.com/theme-next/hexo-theme-next" title="GitHub仓库">GitHub仓库</a>）<br>• Hexo（2020年9月15日发布5.2.0，差别不大不影响以下配置，详情可看Hexo的<a href="https://github.com/hexojs/hexo/releases" title="GitHub版本说明">GitHub版本说明</a>）<br>• Next主题有一个老版本的官方文档，可能是我没找到新版本的官方文档站，但我个人网站里部分功能也是参照这里的配置来的，对我有一定帮助，所以也贴出来：<a href="http://theme-next.iissnan.com/" title="Next v5.1.4官方文档">Next v5.1.4官方文档</a></p>
-<h1 id="效果展示及GitHub链接"><a href="#效果展示及GitHub链接" class="headerlink" title="效果展示及GitHub链接"></a>效果展示及GitHub链接</h1><p>我的个人博客网站链接：<a href="https://www.qinsouth.cn/">https://www.qinsouth.cn/</a><br>GitHub链接：<a href="https://github.com/qinsouth-575/qinsouth-575.github.io">https://github.com/qinsouth-575/qinsouth-575.github.io</a></p>
-<h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><h3 id="第一步：安装Node-js"><a href="#第一步：安装Node-js" class="headerlink" title="第一步：安装Node.js"></a>第一步：安装Node.js</h3><p>详情请见本站相关文章：<a href="https://www.qinsouth.cn/2020/09/12/Node.js%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Node.js的安装及环境配配置">《Node.js的安装及环境配配置》</a>，若已安装，可直接跳过本步骤</p>
-<h3 id="第二步：安装Git"><a href="#第二步：安装Git" class="headerlink" title="第二步：安装Git"></a>第二步：安装Git</h3><p>详情请见本站相关文章：<a href="https://www.qinsouth.cn/2020/09/18/Git%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85GitHub%E8%B4%A6%E5%8F%B7%E7%94%B3%E8%AF%B7%E5%8F%8A%E9%85%8D%E7%BD%AE/" title="Git下载安装GitHub账号申请及配置">《Git下载安装GitHub账号申请及配置》</a>，若已安装，可直接跳过本步骤</p>
-<h3 id="第三步：创建GitHub仓库"><a href="#第三步：创建GitHub仓库" class="headerlink" title="第三步：创建GitHub仓库"></a>第三步：创建GitHub仓库</h3><h4 id="1-登录到GitHub"><a href="#1-登录到GitHub" class="headerlink" title="1.登录到GitHub"></a>1.登录到GitHub</h4><p>使用GitHub把个人博客部署到远端的公服上去，没有GitHub可以使用码云，或者创建GitHub账号都行<br>登录到GitHub，点击左侧的绿色按钮：Create repository或New进入创建仓库页面<br>如果你尚未创建并拥有第一个项目，则会显示Create repository按钮。</p>
-<h4 id="2-创建一个新的GitHub仓库"><a href="#2-创建一个新的GitHub仓库" class="headerlink" title="2.创建一个新的GitHub仓库"></a>2.创建一个新的GitHub仓库</h4><p>用户部署个人博客的GitHub仓库的命名必须符合特定要求才行<br>Repository name 必须是 个人Github用户名.github.io 才行，描述随便写即可<br>我的仓库名显示不正确是因为已经创了一个同名的仓库，所以无法再创建<br><img src="">创建好之后暂时放在这里，等待Hexo安装好，将网址配置进Hexo的网站配置文件中<br>如我的GitHub博客仓库网址：<a href="https://github.com/qinsouth-575/qinsouth-575.github.io.git">https://github.com/qinsouth-575/qinsouth-575.github.io.git</a></p>
-<h3 id="第四步：正式搭建"><a href="#第四步：正式搭建" class="headerlink" title="第四步：正式搭建"></a>第四步：正式搭建</h3><p>本文仍在编写中</p>
-<h1 id="Next主题简单个性化"><a href="#Next主题简单个性化" class="headerlink" title="Next主题简单个性化"></a>Next主题简单个性化</h1><p>本文仍在编写中</p>
-<h1 id="搭建个人博客的其他选择"><a href="#搭建个人博客的其他选择" class="headerlink" title="搭建个人博客的其他选择"></a><a name="else">搭建个人博客的其他选择</a></h1><h2 id="1-搭建动态博客"><a href="#1-搭建动态博客" class="headerlink" title="1.搭建动态博客"></a>1.搭建动态博客</h2><p>动态博客：有前台后端<br>后端可以用各种技术来写，php、Python、C#、Java等都可以  <br>CodeSheep的动态博客，是在学SpringBoot时练手做的，基于SpringBoot+thymeleaf+MySQL的<br>有后台可以管理，可以登录、注册、进行管理操作，类似于博客系统 CSDN、简书这些<br>灵活性比较高、功能更强一些，开发也更难，需要懂前后端，搭建好要找服务器部署，比较麻烦，难度比较高</p>
-<h2 id="2-直接使用成熟的框架"><a href="#2-直接使用成熟的框架" class="headerlink" title="2.直接使用成熟的框架"></a>2.直接使用成熟的框架</h2><p><a href="https://wordpress.org/" title="WordPress">WordPress</a>（基于php实现）<br>动态的CMS系统（博客系统），开源的用来构建一个网站或博客的。使用比较简单。进入文档有详细的教程。 很大程度的自由div</p>
-<h2 id="3-其他静态的博客框架"><a href="#3-其他静态的博客框架" class="headerlink" title="3.其他静态的博客框架"></a>3.其他静态的博客框架</h2><p>部署简单，功能简单，展示即可，都有官方文档可参考</p>
-<ol>
-<li><a href="https://jekyllrb.com/" title="jekyllrb">jekyllrb</a> </li>
-<li><a href="https://www.gohugo.org/" title="Hugo">Hugo</a> Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署</li>
-<li><a href="https://vuepress.vuejs.org/" title="VuePress">VuePress</a> Vue驱动的静态网站生成器</li>
-<li><a href="https://b3log.org/solo/" title="Solo">Solo</a> 一款小而美的Java博客系统，专为程序员设计</li>
-</ol>
-<h1 id="后记-感谢"><a href="#后记-感谢" class="headerlink" title="后记 - 感谢"></a>后记 - 感谢</h1><p>到这里关于Hexo博客搭建、搭配Next主题简单个性化等的内容全部讲完<br>感谢你的观看，希望对你有所帮助！<br>尊重知识产权-以下是本文参考文档链接，感谢几位作者！</p>
-<p>本文仍在编辑中<br>抱歉，本文暂时烂尾了，很难受</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>个人博客</tag>
       </tags>
   </entry>
   <entry>
@@ -146,9 +146,9 @@
         <category>Node.js</category>
       </categories>
       <tags>
-        <tag>环境搭建</tag>
         <tag>Hexo</tag>
         <tag>个人博客</tag>
+        <tag>环境搭建</tag>
         <tag>Node.js</tag>
         <tag>npm</tag>
       </tags>
